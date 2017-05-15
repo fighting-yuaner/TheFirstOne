@@ -14,7 +14,7 @@ function startTime(){
 	m=checkTime(m);
 	s=checkTime(s);
 	document.getElementById('txt').innerHTML=h+":"+m+":"+s;
-	t=setTimeout(function(){startTime()},500);
+	t=setTimeout(function(){startTime()},500);     //这里的时间间隔只要小于1000ms就可以正常显示时间
 }
 function checkTime(i){
 	if (i<10){
